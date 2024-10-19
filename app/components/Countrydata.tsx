@@ -2,7 +2,7 @@ import React from 'react'
 import { countriesdata } from "@/app/data"
 
 const Countrydata = ({name}: {name:string}) => {
-    let data = countriesdata.findIndex(info => info.name===name)
+    const data = countriesdata.findIndex(info => info.name===name)
     const finaldata = countriesdata[data]
     if(data==-1){
         return(
